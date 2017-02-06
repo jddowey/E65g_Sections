@@ -1,0 +1,40 @@
+Section 1 Outline:
+
+Overview of git
+	What is git?
+	Setting it up for first-time use
+		Installing a public/private keypair to ease interactions with git
+			ssh-keygen -t rsa -b 4096 -C "nguerin@g.harvard.edu"
+			eval "$(ssh-agent -s)"
+			ssh-add ~/.ssh/id_rsa_github
+			add the key to github: pbcopy < ~/.ssh/id_rsa_github.pub
+		Setup your author details.  git config --global user.email/user.name example@g.harvard.edu.  git config -l
+		Add the course repository as a remote.:
+			git remote add course git@github.com:rvsrvs/E65g_student.git
+		
+	Git commands:
+		status,diff (--cached),add (-),reset (HEAD),checkout (-),commit,show,log	
+
+	Git assignment workflow
+		1) pull from remote
+		2) do your work, committing and pushing freque`ntly
+		3) test your work, be sure that requirements are met
+		4) tag the assignment submission and push it to your repository
+
+Review the assignment due next week.
+
+StackViews
+AutoLayout
+	Content Hugging vs. Compression Resistance (Label and Text Field)
+	Giving names by double-clicking and editing the view's name in the document outline
+
+Adaptive Layout with Size Classes
+
+Notes for next week:
+
+Evan Borysko says: White background looks washed out on live video.
+
+Hank Sway and Jon White say: Normally when watching live class on the Matterhorn player we can maximize the content on the instructor's screen, but I'm not seeing this option this time around. Makes it hard to watch on a laptop and follow what's going on
+
+
+

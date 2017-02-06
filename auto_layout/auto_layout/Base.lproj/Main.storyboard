@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="auto_layout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qTy-Cp-3ps" userLabel="RedView">
+                                <rect key="frame" x="167" y="28" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dxs-Jg-cqy" userLabel="BlueView">
+                                <rect key="frame" x="16" y="28" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pcV-wb-1kn" userLabel="GreenView">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5e0-US-fWK" userLabel="YellowView">
+                                <rect key="frame" x="191.5" y="351.5" width="167.5" height="315.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="5e0-US-fWK" secondAttribute="trailing" id="48a-n2-5mA"/>
+                            <constraint firstItem="pcV-wb-1kn" firstAttribute="height" secondItem="5e0-US-fWK" secondAttribute="height" id="4uE-NF-95D"/>
+                            <constraint firstItem="5e0-US-fWK" firstAttribute="bottom" secondItem="pcV-wb-1kn" secondAttribute="bottom" id="HHi-5v-gjy"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Dxs-Jg-cqy" secondAttribute="leading" id="NNr-fE-cOw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pcV-wb-1kn" secondAttribute="bottom" id="QQX-Ed-ufz"/>
+                            <constraint firstItem="5e0-US-fWK" firstAttribute="top" secondItem="pcV-wb-1kn" secondAttribute="top" id="QpR-ag-MmK"/>
+                            <constraint firstItem="qTy-Cp-3ps" firstAttribute="leading" secondItem="Dxs-Jg-cqy" secondAttribute="trailing" constant="8" id="Wcl-BH-cBN"/>
+                            <constraint firstItem="pcV-wb-1kn" firstAttribute="leading" secondItem="Dxs-Jg-cqy" secondAttribute="leading" id="XSg-Cz-arb"/>
+                            <constraint firstItem="5e0-US-fWK" firstAttribute="leading" secondItem="pcV-wb-1kn" secondAttribute="trailing" constant="8" id="Ym5-l8-2y3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qTy-Cp-3ps" secondAttribute="trailing" id="cd2-vh-kng"/>
+                            <constraint firstItem="pcV-wb-1kn" firstAttribute="width" secondItem="Dxs-Jg-cqy" secondAttribute="width" id="cvL-la-qIi"/>
+                            <constraint firstItem="pcV-wb-1kn" firstAttribute="top" secondItem="Dxs-Jg-cqy" secondAttribute="bottom" constant="8" id="hWv-dt-WCk"/>
+                            <constraint firstItem="pcV-wb-1kn" firstAttribute="height" secondItem="Dxs-Jg-cqy" secondAttribute="height" id="p5g-Sn-FK1"/>
+                            <constraint firstItem="qTy-Cp-3ps" firstAttribute="height" secondItem="Dxs-Jg-cqy" secondAttribute="height" id="q0U-t8-8tC"/>
+                            <constraint firstItem="Dxs-Jg-cqy" firstAttribute="width" secondItem="qTy-Cp-3ps" secondAttribute="width" id="uLn-ud-ZB1"/>
+                            <constraint firstItem="Dxs-Jg-cqy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="yM1-tQ-H2j"/>
+                            <constraint firstItem="qTy-Cp-3ps" firstAttribute="top" secondItem="Dxs-Jg-cqy" secondAttribute="top" id="ztO-rF-8hp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
